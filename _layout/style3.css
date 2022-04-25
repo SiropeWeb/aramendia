@@ -1,0 +1,151 @@
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,label,p,blockquote,th,td
+{margin:0;padding:0
+}
+table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}strong{font-weight:bold}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0}
+.clearfix:after,.section:after,.fixed:after,.row:after{content:".";
+display:block;clear:both;visibility:hidden;line-height:0;height:0}
+.clearfix,.section,.fixed,.row{display:inline-block}html[xmlns] .clearfix,html[xmlns] .section,html[xmlns] .fixed,html[xmlns] .row{display:block}* html .clearfix,* html .section,* html .fixed,* html .row{height:1%}* {outline:none}  h1,h1 span{font-size:30px;
+line-height:19px}
+h2,h2 span{
+	font-size:26px;line-height:22px}h3,h3 span{font-size:15px;line-height:20px}h4,h4 span{font-size:14px;line-height:16px}h5,h5 span{font-size:12px;line-height:14px}h6,h6 span{font-size:10px;line-height:13px}blockquote,blockquote p{
+	font-size:24px;line-height:26px}
+	h1 span,h2 span,h3 span,h4 span,h5 span,h6 span{color:#fff}h1,h1 span,h2,h2 span,h3,h3 span,h4,h4 span,h5,h5 span,h6,h6 span,blockquote,blockquote p,blockquote span,#header .nav {font-family:'Arial',sans-serif}h1,h1 span,h2,h2 span,h3,h3 span,h4,h4 span,h5,h5 span,h6,h6 span{margin-bottom:20px}
+	body,p,span,div{font-family:'Signika',sans-serif;font-size:12px;line-height:18px;color:#000}
+	p{margin-bottom:20px;color:#000;line-height:24px;font-size:16px;font-weight:300}a{color:#fff;text-decoration:none !important;
+	font-family:'Signika',sans-serif}
+	a:link{}a:visited{}a:hover{text-decoration:underline}
+	a:active{color:#fff}body,html{position:relative;height:100%;width:100%}
+body{
+	background:#999999  no-repeat center top;background-attachment:fixed;position:relative}
+.last{margin-right:0 !important}
+.button{display:block;height:35px;background:#363636;color:#fff;font-weight:600;line-height:35px;text-align:Center;border-radius:4px;padding:0 35px;font-size:13px}
+.button:link{}
+.button:visited{}
+.button:hover{background:#4D4D4D}
+.button:active{}
+.button.contact{float:left;margin-top:20px}
+.effect{transition:background 0.5s,color 0.5s,transform 0.5s;-moz-transition:background 0.5s,color 0.5s,-moz-transform 0.5s;-webkit-transition:background 0.5s,color 0.5s,-webkit-transform 0.5s;-o-transition:background 0.5s,color 0.5s,-o-transform 0.5s}
+.strong-title{font-size:24px;font-weight:700 !important;line-height:30px;color:#e0e4e6;margin-bottom:8px}
+.skills-title{margin-top:31px}
+.m-top-25{margin-top:25px !important}
+#layout{float:left;position:relative;padding-bottom:100px}
+#layout-wrapper{position:relative;padding:50px 50px 0 50px;overflow:hidden}body.ie #layout-wrapper{background:none}
+#pages{margin-top:20px;width:870px; padding-left:20%;}
+#pages h2{font-weight:300}
+#pages >div.active{ background-color: rgba(255, 255, 255, 0.5);
+    display: block;
+    padding-bottom: 28px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 28px;}
+#portrait{width:445px;position:fixed;top:50px;right:50px;bottom:0;z-index:9999}
+#portrait.extra{background-position:center bottom}
+#social{text-align:center;height:39px;width:210px;margin:auto}
+#social li{display:inline-block;margin-right:5px;width:38px;height:39px;float:left}
+#social a{display:block;width:38px;height:39px}
+#social .dribbble{background:url('file:///Macintosh HD/Users/gaizka/Downloads/www.threeepixels.com/live/mint/_layout/images/icon-dribbble.png') no-repeat;background:url('file:///Macintosh HD/Users/gaizka/Downloads/www.threeepixels.com/live/mint/_layout/images/icon-dribbble-hover.png') no-repeat}
+#social .facebook{background:url('file:///Macintosh HD/Users/gaizka/Downloads/www.threeepixels.com/live/mint/_layout/images/icon-facebook.png') no-repeat;background:url('file:///Macintosh HD/Users/gaizka/Downloads/www.threeepixels.com/live/mint/_layout/images/icon-facebook-hover.png') no-repeat}
+#social .twitter{background:url('file:///Macintosh HD/Users/gaizka/Downloads/www.threeepixels.com/live/mint/_layout/images/icon-twitter.png') no-repeat;background:url('file:///Macintosh HD/Users/gaizka/Downloads/www.threeepixels.com/live/mint/_layout/images/icon-twitter-hover.png') no-repeat}
+#social .in{background:url('file:///Macintosh HD/Users/gaizka/Downloads/www.threeepixels.com/live/mint/_layout/images/icon-in.png') no-repeat;background:url('file:///Macintosh HD/Users/gaizka/Downloads/www.threeepixels.com/live/mint/_layout/images/icon-in-hover.png') no-repeat}
+#social .vimeo{background:url('file:///Macintosh HD/Users/gaizka/Downloads/www.threeepixels.com/live/mint/_layout/images/icon-vimeo.png') no-repeat;background:url('file:///Macintosh HD/Users/gaizka/Downloads/www.threeepixels.com/live/mint/_layout/images/icon-vimeo-hover.png') no-repeat}
+#social .dribbble:link{}
+#social .dribbble:visited{}
+#social .dribbble:hover{background:url('file:///Macintosh HD/Users/gaizka/Downloads/www.threeepixels.com/live/mint/_layout/images/icon-dribbble.png') no-repeat}
+#social .dribbble:active{}
+#social .facebook:link{}
+#social .facebook:visited{}
+#social .facebook:hover{background:url('file:///Macintosh HD/Users/gaizka/Downloads/www.threeepixels.com/live/mint/_layout/images/icon-facebook.png') no-repeat}
+#social .facebook:active{}
+#social .twitter:link{}
+#social .twitter:visited{}
+#social .twitter:hover{background:url('file:///Macintosh HD/Users/gaizka/Downloads/www.threeepixels.com/live/mint/_layout/images/icon-twitter.png') no-repeat}
+#social .twitter:active{}
+#social .in:link{}
+#social .in:visited{}
+#social .in:hover{background:url('file:///Macintosh HD/Users/gaizka/Downloads/www.threeepixels.com/live/mint/_layout/images/icon-in.png') no-repeat}
+#social .in:active{}
+#social .vimeo:link{}
+#social .vimeo:visited{}
+#social .vimeo:hover{background:url('file:///Macintosh HD/Users/gaizka/Downloads/www.threeepixels.com/live/mint/_layout/images/icon-vimeo.png') no-repeat}
+#social .vimeo:active{}
+#header h1{font-size:125px;line-height:50px;color:#e0e4e6;text-indent:-5px; padding-left:20%;}
+#header h1 span{color:#fff;font-size:85px}
+#header h2{margin-left:3px;font-weight:300;text-indent:-5px}
+#footer{position:fixed;bottom:5%;height:30px;left:0;right:0;padding-top:20px;padding-bottom:10px;padding-left:50px;z-index:999; background:rgba(0,0,0,0.5);}
+#footer p{line-height:19px;font-style:italic;font-weight:300;margin-bottom:0;font-size:20px}
+#nav{width:400px}
+#nav{margin-bottom:10px;height:20px; float:right; padding-right:25%; text-transform:uppercase;}
+#nav li{display:block;float:left;margin-right:20px}
+#nav a{font-size:16px;color:#fff;}
+#nav a.active{color:#8b9ca7}
+#nav a:link{}
+#nav a:visited{}
+#nav a:hover{color:#8b9ca7}
+#nav a:active{}
+#page-about{display:none}
+#page-resume{display:none}
+#page-resume h3{font-size:18px;font-weight:300 !important;margin-bottom:0;line-height:20px}
+#page-resume p{font-size:14px;line-height:20px;margin-top:5px;margin-bottom:30px}
+#page-resume .skills{margin-top:8px;width:295px}
+#page-resume .skills li{width:295px;margin-bottom:4px;height:20px}
+#page-resume .skills div{float:left}
+#page-resume .skill{width:147px}
+#page-resume .rating{width:148px}
+#page-resume .rating span{background:#fff;width:11px;height:11px;float:left;margin-right:4px;display:block;float:left;margin-top:4px;border-radius:11px}
+#page-resume .rating span.dark{background:#7f8f99}
+#resume-wrap{position:relative;height:44px;width:300px;margin-top:40px}
+#resume-wrap span{display:block;height:51px;width:51px;background:#000;position:absolute;top:-4px;left:124px;border-radius:51px;text-align:center;line-height:51px;font-size:14px;border-radius:51px}
+#resume-wrap div{float:left;width:150px;text-align:center;height:44px;transition:background 0.5s,color 0.5s,transform 0.5s;-moz-transition:background 0.5s,color 0.5s,-moz-transform 0.5s;-webkit-transition:background 0.5s,color 0.5s,-webkit-transform 0.5s;-o-transition:background 0.5s,color 0.5s,-o-transform 0.5s}
+#resume-wrap div a{line-height:45px;font-size:16px;text-decoration:none;display:block;width:150px;height:44px}
+#resume-wrap.lt .left{background:#6cb350}
+#resume-wrap.lt .right{background:#d94920}
+#resume-wrap.rt .left{background:#6cb350}
+#resume-wrap.rt .right{background:#d94920}
+#resume-wrap .right a{text-shadow:0 1px #4b7c37;border-top-right-radius:30px;border-bottom-right-radius:30px}
+#resume-wrap .left a{text-shadow:0 1px #963216;border-top-left-radius:30px;border-bottom-left-radius:30px}
+#resume-wrap .left{background:#d94920;border-top-left-radius:30px;border-bottom-left-radius:30px}
+#resume-wrap .right{background:#6cb350;border-top-right-radius:30px;border-bottom-right-radius:30px}
+#page-portfolio{display:none}
+.pagination{margin-top:5px;height:20px;overflow:hidden}
+.pagination li{display:block;float:left;height:20px;width:20px;line-height:20px;text-align:center;color:#fff;font-size:14px;font-weight:bold;margin-right:2px}
+.pagination a{display:block;height:20px;width:20px}
+.pagination a.active{background:#fff;border-radius:2px;color:#bcc8cf}
+.pagination a:link{}
+.pagination a:visited{}
+.pagination a:hover{background:#fff;border-radius:2px;color:#bcc8cf}
+.pagination a:active{}
+.portfolio-items{height:455px;/*width:550px*/ width:825PX;}
+.portfolio-items li{display:none;width:263px;float:left;margin-right:12px;margin-bottom:12px;height:217px;overflow:hidden;position:relative}
+.portfolio-items img{display:block}
+.portfolio-items a{display:block;width:263px;height:160px}
+.portfolio-items li div{width:263px;height:160px;background:url('file:///Macintosh HD/Users/gaizka/Downloads/www.threeepixels.com/live/mint/_layout/images/back-overlay.png');position:absolute;top:0;left:0;display:none}
+.portfolio-items li span{font-size:14px;color:#8b8b8b;line-height:16px;background:url('file:///Macintosh HD/Users/gaizka/Downloads/www.threeepixels.com/live/mint/_layout/images/back-portfolio-text.png') repeat-x left top;cursor:pointer;height:49px;width:243px;text-align:center;padding-top:8px;padding-left:10px;padding-right:10px;display:block}
+.portfolio-items.page-1 li.page-1{display:block}
+.portfolio-items.page-2 li.page-2{display:block}
+.portfolio-items.page-3 li.page-3{display:block}
+.portfolio-items.page-4 li.page-4{display:block}
+.portfolio-items.page-5 li.page-5{display:block}
+.portfolio-items.page-6 li.page-6{display:block}
+.portfolio-items.page-7 li.page-7{display:block}
+.portfolio-items.page-8 li.page-8{display:block}
+.portfolio-items.page-9 li.page-9{display:block}
+.portfolio-items.page-10 li.page-10{display:block}
+.portfolio-items.page-11 li.page-11{display:block}
+.portfolio-items.page-12 li.page-12{display:block}
+.portfolio-items.page-13 li.page-13{display:block}
+.portfolio-items.page-14 li.page-14{display:block}
+.portfolio-items.page-15 li.page-15{display:block}
+.portfolio-items.page-16 li.page-16{display:block}
+.portfolio-items.page-17 li.page-17{display:block}
+.portfolio-items.page-18 li.page-18{display:block}
+.portfolio-items.page-19 li.page-19{display:block}
+.portfolio-items.page-20 li.page-20{display:block}
+#page-contact{display:none}
+#page-contact h3{font-size:18px;line-height:20px;text-transform:uppercase;font-weight:300 !important;margin-bottom:5px}
+#page-contact p {font-size:14px;line-height:20px;margin-bottom:18px}
+#page-contact span{font-size:14px;line-height:20px;margin:0;display:block}
+.contact-form {margin-top:25px;margin-bottom:25px}
+.contact-form input{border:none;display:block;margin-bottom:9px;width:300px;height:40px;background:#d1d8de;border-radius:4px;padding-left:10px;line-height:40px;font-size:14px;color:#fff;font-weight:600;font-family:'Signika',sans-serif}
+.contact-form input:focus{background:#fff;color:#aebbc8}
+.contact-form textarea{border:none;display:block;width:300px;height:155px;background:#d1d8de;border-radius:4px;padding:15px 0 0 10px;font-size:14px;color:#fff;font-weight:600;font-family:'Signika',sans-serif}
+.contact-form textarea:focus{background:#fff;color:#aebbc8}

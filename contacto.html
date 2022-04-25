@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	
+
+<title>ARAMENDIA</title>
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script> -->
+<script type="text/javascript" src="js/jquery-1.5.js"></script>
+<script type="text/javascript" src="js/jquery_validate.js"></script>
+<script type="text/javascript" src="js/jquery_form.js"></script>
+
+<style>
+	    body { font-family: Helvetica, Arial, sans-serif; }
+	    .container {
+	        width:25%;
+			margin-RIGHT:20%;
+			background: rgba(255, 255, 255, 0.8);	        
+			padding: 20px;
+			float:right;
+			line-height:1.2em;
+	    }
+		#footer {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    bottom: 5%;
+    left: 0;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-top: 20px;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+}
+#navigation {
+    float: right;
+    height: 20px;
+    margin-bottom: 10px;
+    padding-right: 25%;
+    text-transform: uppercase;
+}
+#navigation {
+    width: 400px;
+}
+style.css (línea 72)
+ol, ul {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+}
+#navigation li {
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+#navigation a {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+a {
+    -moz-text-blink: none !important;
+    -moz-text-decoration-color: -moz-use-text-color !important;
+    -moz-text-decoration-line: none !important;
+    -moz-text-decoration-style: solid !important;
+    font-family: 'Signika',sans-serif;
+}
+	    pre { border: 1px solid #CCC; background-color: #EEE; color: #333; padding: 10px; }
+		#container-contact{display:none}
+#container-contact h3{font-size:18px;line-height:20px;text-transform:uppercase;font-weight:300 !important;margin-bottom:5px}
+#container-contact p {font-size:14px;line-height:20px;margin-bottom:18px}
+#container-contact span{font-size:14px;line-height:20px;margin:0;display:block}
+.contact-form {margin-top:25px;margin-bottom:25px}
+.contact-form input{border:none;display:block;margin-bottom:9px;width:300px;height:40px;background:#d1d8de;border-radius:4px;padding-left:10px;line-height:40px;font-size:14px;color:#000;font-weight:600;font-family:'Signika',sans-serif}
+.contact-form input:focus{background:#fff;color:#aebbc8}
+.contact-form textarea{border:none;display:block;width:300px;height:155px;background:#d1d8de;border-radius:4px;padding:15px 0 0 10px;font-size:14px;color:#000;font-weight:600;font-family:'Signika',sans-serif}
+.contact-form textarea:focus{background:#fff;color:#aebbc8}
+.button{display:block;height:35px;background:#363636;color:#fff;font-weight:600;line-height:35px;text-align:Center;border-radius:4px;padding:0 35px;font-size:13px}
+.button:link{}
+.button:visited{}
+.button:hover{background:#4D4D4D}
+.button:active{}
+.button.contact{float:left;margin-top:20px}
+.effect{transition:background 0.5s,color 0.5s,transform 0.5s;-moz-transition:background 0.5s,color 0.5s,-moz-transform 0.5s;-webkit-transition:background 0.5s,color 0.5s,-webkit-transform 0.5s;-o-transition:background 0.5s,color 0.5s,-o-transform 0.5s}
+.strong-title{font-size:24px;font-weight:700 !important;line-height:30px;color:#e0e4e6;margin-bottom:8px}
+.skills-title{margin-top:31px}
+form { max-width:390px;font-size: 1.0em;color: #333;margin:50px auto;padding:0}
+legend {background:#ccc;padding:10px;font-size:13px;font-weight:bold}
+fieldset {border: 1px dotted #ccc;padding:10px}
+form legend, form label {color: #333;}
+
+fieldset p {padding: 5px 10px 7px;}
+input,textarea{border:1px solid #ccc;padding:5px;width:95%;font-size:12px}
+
+form label.error, label.error {color: red;font-style: italic}
+div.error { display: none; }
+
+input:focus,text area:focus { border: 1px dotted black; }
+input.error,textarea.error { border: 1px dotted red; }
+form .submit { color: gray;width:150px }
+
+#mensaje{width:700px;margin:10px auto;text-align:center}
+#mensaje img{vertical-align:middle;margin:0 10px 0 0}
+
+.boton {width: 100px; height: 25px; cursor: pointer}
+
+
+	</style>
+    <script type="text/javascript">
+/* <![CDATA[ */
+$(document).ready(function(){
+$("#mensaje").hide();
+$("#formulario").validate({
+event: "blur",
+debug: true,errorElement: "label",
+submitHandler: function(form){
+$("#mensaje").show();
+$("#mensaje").html("<img src='ajax-loader.gif' alt='Enviando…' /><strong>Enviando…</strong>");
+$.ajax({
+type: "POST",
+url:"envio_email.php",
+contentType: "application/x-www-form-urlencoded",
+processData: true,
+data: "nombre="+escape($('#formulario_nombre').val())+"&email="+escape($('#formulario_email').val())+"&consulta="+escape($('#formulario_consulta').val()),
+success: function(msg){
+$("#mensaje").html("<strong>El mensaje ha sido enviado correctamente. Gracias!</strong>");
+setTimeout(function() {$('#mensaje').fadeOut('fast');}, 3000);
+}
+});
+}
+});
+});
+/* ]]> */
+</script>
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>ARAMENDIA</h1>
+        <h3>Etxebizitza Turistikoa</h3>
+      <p>Calle el crucero Nº 12<br>
+          31290 Aramendia - Navarra</p>
+Tel: 605743235 </br> <a href="mailto:aramendian@hotmail.com">  aramendian@hotmail.com</a>
+</head>
+<body>
+<div id="mensaje">&nbsp;</div>
+<form id="formulario" action="#">
+<fieldset>
+<legend>Formulario de Contacto</legend>
+<p><label for="formulario_nombre">Nombre</label><input name="nombre" type="text" maxlength="255" value="" id="formulario_nombre" class="required" /></p>
+<p><label for="formulario_email">E-mail</label><input name="email" type="text" value="" id="formulario_email" class="required email" /></p>
+<p><label for="formulario_consulta">Consulta</label><textarea name="consulta" cols="5" rows="3" id="formulario_consulta" class="required" ></textarea></p>
+<p><input class="submit" type="submit" value="Enviar Formulario" /><button class="boton" type="submit">Enviar</button></p>
+</fieldset>
+</form>
+    </div>
+	<script src="jquery.backstretch.min.js"></script>
+	<script>
+	    $.backstretch("1a.jpg");
+    </script>
+        <!-- #### FOOTER --> 
+<div id="footer"> 
+<ul id="navigation" > 
+<li> 
+<a href="index.html">INICIO</a> 
+</li> 
+<li> 
+<a href="info.html">INFO</a> 
+</li> 
+<li> 
+<a href="imagenes.html">imágenes</a> 
+</li> 
+<li> 
+<a href="contacto.html">contacTO</a> 
+</li> 
+</ul> 
+</div> 
+<!-- #### FOOTER END --> 
+
+
+</body>
+</html>
